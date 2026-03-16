@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Atividades</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card controls">
+      <h1>Gerador de Atividades de Português</h1>
+      <p>Monte fichas prontas para imprimir para turmas do 1º ao 5º ano.</p>
+      <div class="grid">
+        <label>Ano escolar
+          <select id="grade">
+            <option>1º ano</option><option>2º ano</option><option>3º ano</option><option>4º ano</option><option>5º ano</option>
+          </select>
+        </label>
+        <label>Tema
+          <select id="topic">
+            <option>sílabas</option>
+            <option>compreensão de leitura</option>
+            <option>separação de palavras</option>
+            <option>acentuação</option>
+          </select>
+        </label>
+        <label>Nível de dificuldade
+          <select id="difficulty">
+            <option>fácil</option><option>médio</option><option>difícil</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button id="generateBtn">Gerar atividade</button>
+        <button id="regenerateBtn" class="secondary">Regenerar exercícios</button>
+        <button id="downloadBtn" class="secondary">Baixar PDF A4</button>
+      </div>
+    </section>
+
+    <section id="worksheet" class="worksheet a4-print"></section>
+  </main>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
